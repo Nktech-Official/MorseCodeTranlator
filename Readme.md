@@ -35,13 +35,13 @@ https://morse-code-translater.herokuapp.com/
 
 # Usage
 1. clone or download the app clone using git
-    git clone https://github.com/Nktech-Official/MorseCodeTranlator.git
+        git clone https://github.com/Nktech-Official/MorseCodeTranlator.git
 
 2. Install the requirement files 
-    pip install -r requirements.txt
+        pip install -r requirements.txt
 
 3. Now launch the app.py
-    python app.py
+        python app.py
 
 4. After launching the application you will get following ouptut
     * Serving Flask app "app" (lazy loading)
