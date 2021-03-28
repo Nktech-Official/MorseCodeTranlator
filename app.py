@@ -1,6 +1,5 @@
 from flask import Flask , render_template , redirect, url_for,request
 app = Flask(__name__)
-# app.debug=True)
 @app.route('/')
 def Home():
     return render_template('index.html')
@@ -27,8 +26,7 @@ def submit():
 
 @app.route("/about")
 def about():
-    dict={"math":40,"Physics":56,"Chemistry":69,"English":58,"Computer Science":89}
-    return render_template("about.html",values=dict)
+    return render_template("about.html")
 @app.route("/PrivacyPolicy")
 def PrivacyPolicy():
     return render_template("PrivacyPolicy.html")
