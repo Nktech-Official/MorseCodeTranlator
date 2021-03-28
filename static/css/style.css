@@ -121,3 +121,25 @@ button[type=submit] {
     min-height: 100px;
     max-height: 100%;
 }
+
+.quote {
+    background-color: black;
+    padding: 10px;
+}
+
+.comout {
+    /* border: solid; */
+    border-radius: 5px;
+    background-color: black;
+    margin-top: 20px;
+}
+
+.comout ul {
+    list-style: none;
+    padding: 10px;
+    color: white;
+}
+
+.comout li {
+    padding: 10px;
+}
