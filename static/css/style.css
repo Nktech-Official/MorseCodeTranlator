@@ -116,8 +116,8 @@ button[type=submit] {
     /* border: solid; */
     background-color: #ccc;
     color: black;
-    /* overflow: auto;
-    overflow-y: scroll; */
-    min-height: 80px;
-    max-height: 120px;
+    overflow: auto;
+    overflow-y: scroll;
+    min-height: 100px;
+    max-height: 100%;
 }

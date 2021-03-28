@@ -1,19 +1,14 @@
 from flask import Flask , render_template , redirect, url_for,request
 app = Flask(__name__)
-# app.debug=True
-@app.route('/',methods = ['POST', 'GET']) 
+# app.debug=True)
+@app.route('/')
 def Home():
+    return render_template('index.html')
+@app.route('/submit',methods = ['POST']) 
+def submit():
     try:
         if request.method == 'POST':
             code = request.form['code']
-            print(code)
-        #   return output(Code)
-        else:
-            code = request.args.get('code')
-        #   return output(Code)
-        if code==None:
-            return render_template("index.html",str="",code="")
-        else:
             name=code.upper()
             name=" ".join(name.split())
 
@@ -24,12 +19,11 @@ def Home():
                     str+=""
                 else:
                     str+=data[i]+' '
-            str=str.replace("//","/")  
-            str=str.replace("/ /","/")
             
-            return render_template("index.html",str=str,code=code)
+            return render_template("submit.html",str=str,)
     except:
-        return render_template("index.html",str="plz Enter valid characters (abc or ABC) no Numerical value plz",code=code)
+        
+        return render_template("submit.html",str=f"plz Enter valid characters (abc or ABC or 0-9) the symbol cannot be translated.")
 
 @app.route("/about")
 def about():

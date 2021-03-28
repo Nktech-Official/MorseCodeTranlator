@@ -4,30 +4,29 @@
     {% endblock body %} {% block content %}
     <br/>
     <div class="container">
-        <form action="{{url_for('Home')}}" method="POST">
-
+        <form method="POST">
             <div class="row">
                 <div class="col-25">
                     <label for="subject">Enter Message to Encode</label>
                 </div>
                 <div class="col-75">
-                    <textarea id="code" name="code" placeholder="Type text to translate.... " style="height:80px">{{code}}</textarea>
+                    <textarea id="code" onclick="load()" onKeyDown="javascript: var key = event.keyCode || event.charCode || event.which ; backspace(key); " class="code" name="code" placeholder="Type text to translate....(plz press &lt;space&gt; button after a word & after backspace to see correct result this is a bug if you know how to fix this or want socurse code go to github:- <br>
+                         ) " style="height:80px"></textarea>
                 </div>
             </div>
-            <br/>
-            <div class="row">
-                <button id="submit" type="submit" value="Submit">Submit</button>
-            </div>
+
             <br/>
             <div class="row">
                 <div class="col-25">
                     <label for="subject">Morce code</label>
                 </div>
-                <div class="col-75">
-                    <textarea disabled id="output" placeholder="Morse code appear here..... '/' means &lt;space&gt; or New word and '|' means new line" name="output" style="padding: 12px;">{{str}}</textarea>
+                <div id="outputs">
+                    <div class="col-75">
+                        <textarea disabled placeholder="Morse code appear here..... '/' means &lt;space&gt; or New word and '|' means new line" name="output" id='output' style="padding: 12px;">{{str}}</textarea>
+                    </div>
                 </div>
             </div>
-
-
         </form>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="{{url_for('static',filename='script/app.js')}}"></script>
         {% endblock content %}
