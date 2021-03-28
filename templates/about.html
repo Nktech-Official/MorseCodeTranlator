@@ -1,7 +1,78 @@
 {% extends 'base.html' %}{% block title %}About Us{% endblock title %} {% block body %}
 
 <body onload="active('about')">{% endblock body %} {% block content %}
-    <h1>Welcome to Morse Code Genrator</h1><br/>
-    <p>our number one source for encoding text to morse code. We're dedicated to providing you the very best of encoding, with an emphasis on clear & understandable code. </p>
-    <p>Founded in 2021, Morse Code Genrator has come a long way from its beginnings in India. </p>
-    <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p> Sincerely, {% endblock content %}
+    <h1 id="morse-code-generator">Morse Code Generator</h1>
+    <p>This is a Translation tool which tanslate normal text to morse code </p>
+    <h1>source code on Github :</h1>
+    <a href="https://github.com/Nktech-Official/MorseCodeTranlator.git" target="_blank">Morse Code Translator</a>
+    <h1 id="features">Features:</h1>
+    <ol style="list-style-type: decimal">
+        <li>Use Flask</li>
+        <li>Show the result without reloading page</li>
+        <li>use javascript for that</li>
+        <li>use Bootstrap for html form</li>
+        <li>Source code is avalible on github <a href="https://github.com/Nktech-Official/MorseCodeTranlator.git" target="_blank">https://github.com/Nktech-Official/MorseCodeTranlator.git</a></li>
+
+    </ol>
+    <h1 id="requirement">Requirement:</h1>
+    <ol style="list-style-type: decimal">
+        <li>click==7.1.2</li>
+        <li>Flask==1.1.2</li>
+        <li>gunicorn==20.0.4</li>
+        <li>itsdangerous==1.1.0</li>
+        <li>Jinja2==2.11.3</li>
+        <li>MarkupSafe==1.1.1</li>
+        <li>Werkzeug==1.0.1</li>
+    </ol>
+    <h1 id="file-folder">File &amp; Folder</h1>
+    <ol style="list-style-type: decimal">
+        <li>Static This folder contain stylesheet , images &amp; javascript.</li>
+        <li>templates This folder contain html template for the site .</li>
+        <li>app.py This is the main app file</li>
+        <li>Procfile This file is used to tell the Heroku that this is a webapp for deploying purpose not needed on local server</li>
+        <li>Readme.md Discription and usage wirtten in this file</li>
+        <li>Requirements.txt This file contain the required module name which are nedded ot use this webapp.</li>
+    </ol>
+    <h1 id="usage">Usage</h1>
+    <ol style="list-style-type: decimal">
+        <li>
+            <p>clone or download the app clone using git.
+                <blockquote class="quote">
+                    <span style="color: chocolate;">git</span> <span style="color: burlywood;">clone</span> <span style="color: aqua;">https://github.com/Nktech-Official/MorseCodeTranlator.git</span></blockquote>
+            </p>
+        </li>
+        <li>
+            <p>Install the requirement files.
+                <blockquote class="quote">
+                    <span style="color: rgb(24, 118, 206)">pip</span> <span style="color:rgb(223, 179, 35);">install </span><span style="color:rgb(179, 209, 5)">-r requirements.txt</span>
+                </blockquote>
+            </p>
+        </li>
+        <li>
+            <p>Now launch the app.py
+                <blockquote class="quote">
+                    <span style="color: green;">python</span> <span style="color: darkgoldenrod;">app.py</span>
+                </blockquote>
+            </p>
+        </li>
+        <li>After launching the application you will get following ouptut
+            <div class='comout'>
+                <ul>
+                    <li>Serving Flask app &quot;app&quot; (lazy loading)</li>
+                    <li>Environment: production WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.</li>
+                    <li>Debug mode: on</li>
+                    <li>Restarting with stat</li>
+                    <li>Debugger is active!</li>
+                    <li>Debugger PIN: 125-144-452</li>
+                    <li>Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 127.0.0.1 - - [28/Mar/2021 15:55:29] &quot;GET / HTTP/1.1&quot; 200 -</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <p>open WebBrowser and type in addressbar link given in second last line of output http://127.0.0.1:5000/</p>
+        </li>
+        <li>
+            <p>To quit or exit the app in the command line Press CTRL+C.</p>
+        </li>
+    </ol>
+    {% endblock content %}
