@@ -1,16 +1,20 @@
-$(document).on("keypress", ".code", function() {
+$(document).on("keyup", ".code", function() {
+    x = $("#code").val()
     req = $.ajax({
         type: 'POST',
         url: '/submit',
         data: {
-            code: $("#code").val()
+            code: x
         }
     });
+
     req.done(function(data) {
         $("#outputs").html(data);
         // console.log("helloj");
 
     });
+
+
 });
 
 function backspace(keycode) {
