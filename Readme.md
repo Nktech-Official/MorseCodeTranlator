@@ -1,7 +1,7 @@
 # Morse Code Generator
 This is a Translation tool which tanslate normal text to morse code
 ## Try it on Heroku : 
-    https://morse-code-translater.herokuapp.com/
+https://morse-code-translater.herokuapp.com/
 
 # Features:
 1. Use Flask
@@ -35,13 +35,13 @@ This is a Translation tool which tanslate normal text to morse code
 
 # Usage
 1. clone or download the app clone using git
-    git clone https://github.com/Nktech-Official/MorseCodeTranlator.git
+        git clone https://github.com/Nktech-Official/MorseCodeTranlator.git
 
 2. Install the requirement files 
-    pip install -r requirements.txt
+        pip install -r requirements.txt
 
 3. Now launch the app.py
-    python app.py
+        python app.py
 
 4. After launching the application you will get following ouptut
     * Serving Flask app "app" (lazy loading)
