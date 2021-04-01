@@ -106,8 +106,7 @@ label {
 }
 
 .col-25,
-.col-75,
-button[type=submit] {
+.col-75 {
     width: auto;
     margin-top: 0;
 }
