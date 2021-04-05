@@ -1,8 +1,15 @@
 from flask import Flask , render_template , redirect, url_for,request
+from flask_sitemap import Sitemap
 app = Flask(__name__)
+ext=Sitemap(app=app)
 @app.route('/')
 def Home():
     return render_template('index.html')
+@ext.register_generator
+def Home():
+    # Not needed if you set SITEMAP_INCLUDE_RULES_WITHOUT_PARAMS=True
+    yield 'Home', {}
+
 @app.route('/submit',methods = ['POST']) 
 def submit():
     try:
