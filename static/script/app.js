@@ -11,7 +11,7 @@ $(document).on("keyup", ".code", function() {
     req.done(function(data) {
         $("#output").val(data["value"]);
 
-        console.log(data);
+        // console.log(data);
 
     });
 
