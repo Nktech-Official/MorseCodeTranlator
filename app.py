@@ -1,4 +1,4 @@
-from flask import Flask , render_template , redirect, url_for,request
+from flask import Flask , render_template , redirect, url_for,request,jsonify
 from flask_sitemap import Sitemap
 app = Flask(__name__)
 ext=Sitemap(app=app)
@@ -26,10 +26,11 @@ def submit():
                 else:
                     str+=data[i]+' '
             
-            return render_template("submit.html",str=str,)
+            return jsonify(value=str)
     except:
         
-        return render_template("submit.html",str=f"plz Enter valid characters (abc or ABC or 0-9) the symbol cannot be translated.")
+        return jsonify(value=f"plz Enter valid characters (abc or ABC or 0-9) the symbol cannot be translated.")
+        
 
 @app.route("/about")
 def about():

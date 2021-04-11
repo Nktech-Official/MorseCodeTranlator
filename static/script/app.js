@@ -9,8 +9,9 @@ $(document).on("keyup", ".code", function() {
     });
 
     req.done(function(data) {
-        $("#outputs").html(data);
-        // console.log("helloj");
+        $("#output").val(data["value"]);
+
+        console.log(data);
 
     });
 
@@ -29,7 +30,7 @@ function backspace(keycode) {
             }
         });
         req.done(function(data) {
-            $("#outputs").html(data);
+            $("#output").val(data["value"]);
 
             // console.log("initialize");
         })

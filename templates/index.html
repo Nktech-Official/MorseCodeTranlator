@@ -10,7 +10,7 @@
                     <label for="subject">Enter Message to Encode</label>
                 </div>
                 <div class="col-75">
-                    <textarea id="code" onKeyDown="javascript: var key = event.keyCode || event.charCode || event.which ; backspace(key); " class="code" name="code" placeholder="Type text to translate....(source code avalible on github if you found bug report here:- https://github.com/Nktech-Official/MorseCodeTranlator ) "
+                    <textarea id="code" spellcheck="false" onKeyDown="javascript: var key = event.keyCode || event.charCode || event.which ; backspace(key); " class="code" name="code" placeholder="Type text to translate....(source code avalible on github if you found bug report here:- https://github.com/Nktech-Official/MorseCodeTranlator ) "
                         style="height:80px"></textarea>
                 </div>
 
@@ -22,7 +22,7 @@
                 </div>
                 <div id="outputs">
                     <div class="col-75">
-                        <textarea disabled placeholder="Morse code appear here..... '/' means &lt;space&gt; or New word and '|' means new line" name="output" id='output' style="padding: 12px;">{{str}}</textarea>
+                        <textarea disabled id="output" placeholder="Morse code appear here..... '/' means &lt;space&gt; or New word and '|' means new line" name="output" id='output' style="padding: 12px;">{{str}}</textarea>
                     </div>
                 </div>
             </div>
