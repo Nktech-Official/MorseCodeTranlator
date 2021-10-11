@@ -32,6 +32,14 @@ https://morse-code-translater.herokuapp.com/
     Discription and usage wirtten in this file
 6. Requirements.txt
     This file contain the required module name which are nedded ot use this webapp.
+ # HacktoberFest Rules:
+  1. don't change Procfile
+  2. Try to solve the given issue .
+  3. If you don't know python then try to imporove frontend by making the website looks good 
+  4. make meaning full commit's
+  5. add appropriate comment's to the code both python and html , js ,css don't create any extra file 
+  6. only valid PR will be merged.
+ 
 
 # Usage
 1. clone or download the app clone using git
