@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
     <title>{% block title %} {% endblock title %} - MorseCodeTranslater</title>
     <script data-ad-client="ca-pub-4818170421440239" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+
 </head>
 
 {% block body %} {% endblock body %}
