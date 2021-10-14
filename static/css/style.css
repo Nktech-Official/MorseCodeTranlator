@@ -134,3 +134,7 @@ label {
     cursor: default;
     overflow: auto;
 }
+
+.darkmode-toggle:after {
+  content: 'xd';
+}
