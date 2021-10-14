@@ -137,6 +137,12 @@ label {
 
 .darkmode--activated button {
   border-radius:5%;
+    width:150px;
+}
+
+.darkmode-toggle button{
+    border-radius:5%;
+    width:150px;
 }
 
 
