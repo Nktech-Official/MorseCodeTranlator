@@ -135,14 +135,10 @@ label {
     overflow: auto;
 }
 
-.darkmode--activated button {
-  border-radius:5%;
-    width:150px;
-}
 
 .darkmode-toggle {
-    border-radius:5%;
-    width:150px;
+    border-radius:5% !important;
+    width:150px !important;
 }
 
 
