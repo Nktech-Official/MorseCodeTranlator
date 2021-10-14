@@ -139,6 +139,13 @@ label {
 .darkmode-toggle {
     border-radius:5% !important;
     width:150px !important;
+    color: white;
+}
+
+.darkmode--activated .darkmode-toggle {
+    border-radius:5% !important;
+    width:150px !important;
+    color: black;
 }
 
 
