@@ -135,6 +135,4 @@ label {
     overflow: auto;
 }
 
-.darkmode-toggle:after {
-  content: 'xd';
-}
+
