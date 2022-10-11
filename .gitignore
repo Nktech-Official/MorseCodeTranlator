@@ -2,3 +2,6 @@
 /morce_code/
 /.vscode/
 __pycache__
+
+.env
+env
